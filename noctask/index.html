@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NocTask - 効率的なタスク管理アプリ</title>
+    <meta name="description" content="NocTaskは、シンプルで効率的なタスク管理と生産性向上のためのアプリです。あなたの大切なデータはすべてデバイス内に安全に保存されます。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            line-height: 1.8;
+            color: #1a202c;
+            background-color: #f7fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            color: white;
+            border-radius: 24px;
+            margin-bottom: 60px;
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .feature-description {
+            color: #4a5568;
+        }
+
+        .privacy-section {
+            background: #EBF8FF;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .privacy-title {
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .privacy-link {
+            display: inline-block;
+            background: #3B82F6;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .privacy-link:hover {
+            background: #2563EB;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #E2E8F0;
+            color: #718096;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>NocTask</h1>
+            <p class="tagline">シンプルで効率的なタスク管理アプリ</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3 class="feature-title">直感的なタスク管理</h3>
+                <p class="feature-description">タイムラインビューで一日のタスクを視覚的に管理。時間ごとのタスク配置で効率的なスケジュール管理を実現します。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">詳細な分析機能</h3>
+                <p class="feature-description">タスクの完了率、カテゴリ別の時間配分、集中度の推移など、あなたの生産性を可視化します。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <h3 class="feature-title">スマート通知</h3>
+                <p class="feature-description">タスクの開始時間になると通知でお知らせ。大切なタスクを忘れることはありません。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">集中度トラッキング</h3>
+                <p class="feature-description">タスク完了時に集中度と気分を記録。自分のパフォーマンスパターンを把握できます。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌓</div>
+                <h3 class="feature-title">ダークモード対応</h3>
+                <p class="feature-description">目に優しいダークモードを搭載。時間帯や環境に合わせて快適に使用できます。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">完全にプライベート</h3>
+                <p class="feature-description">すべてのデータはあなたのデバイスに保存。外部サーバーへの送信は一切ありません。</p>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2 class="privacy-title">🔐 あなたのプライバシーを守ります</h2>
+            <p style="margin-bottom: 30px; color: #4a5568;">NocTaskは個人情報を一切収集しません。すべてのデータはデバイス内に安全に保存されます。</p>
+            <a href="privacy.html" class="privacy-link">プライバシーポリシーを見る</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 BakeStack. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
